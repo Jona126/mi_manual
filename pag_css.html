@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style_css.css">
+    <link rel="icon" href="./img_css/css2.png">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                COLORES
+            </div>
+        </div>
+
+    </header>
+<div class="contenedor">
+    <div class="tarjeta">
+        <figure>
+            <img src="./img_css/colors.jpg" alt="">
+        </figure>
+        <h3>Usando los nombres de colores</h3>
+        <p> podemos especificar que el color del párrafo sea rojo con la siguiente regla:</p>
+        <pre>p{
+        color: red;
+        }
+        </pre>
+            <div class="contenido">
+                <a href="https://www.w3.org/TR/css-color-3/#svg-color" target="_blank">Lista Colores</a>    
+            </div>  
+    </div>
+ 
+        <div class="tarjeta">
+         <figure>
+             <img src="./img_css/RGB-Color-Model.jpg" alt="">
+         </figure>
+         <h3>RGB</h3>
+         <h4>El parámetro red</h4>
+            <p><li>Especifica la intensidad del  rojo presente en la mezcla.</li></p>
+            <p><li>Los valores posibles son: [0-255] o [0%-100%].</li></p>
+            <h4>El parámetro green</h4>
+            <p><li>Especifica la intensidad del  verde presente en la mezcla.</li></p>
+            <p><li>Los valores posibles son: [0-255] o [0%-100%].</li></p>
+            <h4>El parámetro blue</h4>
+            <p><li>Especifica la intensidad del  azul presente en la mezcla.</li></p>
+            <p><li>Los valores posibles son: [0-255] o [0%-100%].</li></p>
+            <h3>RGBA(r,g,b,a).</h3>
+            <h4>Opacidad:</h4>
+            <h4>El parámetro a</h4>
+            <p><li>Especifica la transparencia.</li></p>
+            <p><li>Los valores posibles son: [0-1].</li></p>
+            <p><li>0,  significa completamente transparente.</li></p>
+            <p><li>1,  significa completamente opaco (no transparente).</li></p>
+            <h3>Valor Hexadecimal</h3>
+            <p>Podemos utilizar un número hexadecimal para definir un color. Es una alternativa a la función  rgb, es decir permite definir un color como la mezcla de intensidades de los colores primarios.</p>
+            <h4>#numero_hexadecimal</h4>
+            <p><li>El número hexadecimal</li></p>
+            <p><li>Tiene 6 dígitos.</li></p>
+            <p><li>Los primeros dos dígitos indican el color rojo.</li></p>
+            <p><li>Los dos dígitos del medio indican el color verde.</li></p>
+            <p><li>Los dos últimos dígitos indican el color azul.</li></p>
+         <div class="contenido">
+            <a href="https://g.co/kgs/sxEn2S" target="_blank">Herramienta en Linea</a> 
+         </div>
+        </div> 
+    <div class="tarjeta">
+        <figure>
+            <img src="./img_css/hsl.png" alt="">
+        </figure>
+        <h3>MODELO HSL</h3>
+        <h4>La función hsl(h, s, l).</h4>
+        <h4>hsl(hue, saturation, lightness)</h4>
+        <p><li>El parámetro hue (tono).</li></p>
+        <p><li>Es el color.</li></p>
+        <p><li>Los valores posibles son: [0-360]</li></p>
+        <p><li>Podemos obtener los valores de la rueda de colores.</li></p>
+        <p><li>El parámetro saturation (saturación).</li></p>
+        <p><li>Determina que tan fuerte o vivo es un color.</li></p>
+        <p><li>Los valores posibles son: [0%-100%].</li></p>
+        <p><li>Donde 100% significa completamente saturado (color muy vivo)</li></p>
+        <p><li>Donde 0% significa sin saturación alguna (color apagado).</li></p>
+        <h4>El parámetro ligthness (Luminosidad).</h4>
+        <p><li>Permite establecer la claridad u oscuridad de un color.</li></p>
+        <p><li>Los valores posibles son de: [0%-100%].</li></p>
+        <p><li>Donde 100% significa completamente blanco (brillantez total).</li></p>
+        <p><li>Donde 50% es normal.</li></p>
+        <p><li>Donde 0% es competamente negro (sin brillantez).</li></p>
+        <h4>Opacidad</h4>
+        <h4>hsla(h,s,l,a)</h4>
+        <p><li>El parámetro <b>a</b> especifica la transparencia.</li></p>
+        <p><li>Los valores posibles son: [0-1]</li></p>
+        <p><li>0 significa completamente transparente.</li></p>
+        <p><li>1 significa completamente opaco (no transparente).</li></p>
+        <div class="contenido">
+            <a href=" https://hslpicker.com/" target="_blank">HSL Color Pickeer</a> 
+        </div>
+    </div>
+</div>
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            SELECTORES
+        </div>
+    </div>
+
+</header>
+<table>
+    <thead>
+        <tr>
+            <th>Sintaxis</th>
+            <th>Descripcion</th>
+            <th>Documentaciòn</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>*</td>
+            <td>Cualquier elemento.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#universal-selector" target= "_blank">Selector Universal</a></td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>Un elemento de tipo E.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#type-selectors" target= "_blank">Selector de Tipo</a></td>
+        </tr>
+        <tr>
+            <td>E[foo]</td>
+            <td>Un elemento E con un atributo "foo".</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">Selector de atributos</a></td>
+        </tr>
+        <tr>
+            <td>E[foo="bar"]</td>
+            <td>Un elemento E cuyo valor de atributo "foo" es exactamente igual a "bar".</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">Selector de atributos</a></td>
+        </tr>
+        <tr>
+            <td>E[foo~="bar"]</td>
+            <td>Un elemento E cuyo valor de atributo "foo" es una lista de valores separados por espacios en blanco, uno de los cuales es exactamente igual a "bar".</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">Selector de atributos</a></td>
+        </tr>
+        <tr>
+            <td>E[foo^="bar"]</td>
+            <td>Un elemento E cuyo valor de atributo "foo" comienza exactamente con la cadena "bar".</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">Selector de atributos</a></td>
+        </tr>
+        <tr>
+            <td>E[foo$="bar"]</td>
+            <td>Un elemento E cuyo valor de atributo "foo" termina exactamente con la cadena "bar".</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">Selector de atributos</a></td>
+        </tr>
+        <tr>
+            <td>E[foo*="bar"]</td>
+            <td>Un elemento E cuyo valor de atributo "foo" contiene la subcadena "bar".</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">Selector de atributos</a></td>
+        </tr>
+        <tr>
+            <td>E[foo|="en"]</td>
+            <td>Un elemento E cuyo atributo "foo" tiene una lista de valores separados por guiones que comienzan (desde la izquierda) con "en".</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">Selector de atributos</a></td>
+        </tr>
+        <tr>
+            <td>E:root</td>
+            <td>Un elemento E, raíz del documento.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:nth-child(n)</td>
+            <td>Un elemento E, el n-ésimo hijo de su padre.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:nth-last-child(n)</td>
+            <td>Un elemento E, el n-ésimo hijo de su padre, contando desde el último.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:nth-of-type(n)</td>
+            <td>Un elemento E, el n-ésimo hermano de su tipo.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:nth-last-of-type(n)</td>
+            <td>Un elemento E, el n-ésimo hermano de su tipo, contando desde el último.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:first-child</td>
+            <td>Un elemento E, primer hijo de su padre.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:last-child</td>
+            <td>Un elemento E, último hijo de su padre.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:first-of-type</td>
+            <td>Un elemento E, primer hermano de su tipo.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:last-of-type</td>
+            <td>Un elemento E, último hermano de su tipo.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:only-child</td>
+            <td>Un elemento E, único hijo de su padre.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:only-of-type</td>
+            <td>Un elemento E, único hermano de su tipo.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:empty</td>
+            <td>Un elemento E que no tiene hijos (incluidos los nodos de texto).</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:link</td>
+            <td>Siendo un elemento E el ancla fuente de un hipervínculo cuyo destino aún no ha sido visitado.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#link" target= "_blank">Pseudoclases de enlace</a></td>
+        </tr>
+        <tr>
+            <td>E:visited</td>
+            <td>Siendo un elemento E el ancla fuente de un hipervínculo cuyo destino aún no ha sido visitado.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#link" target= "_blank">Pseudoclases de enlace</a></td>
+        </tr>
+        <tr>
+            <td>E:active</td>
+            <td>Un elemento E durante ciertas acciones del usuario.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#useraction-pseudos" target= "_blank">Pseudoclases de accion del usuario</a></td>
+        </tr>
+        <tr>
+            <td>E:hover</td>
+            <td>Un elemento E durante ciertas acciones del usuario.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#useraction-pseudos" target= "_blank">Pseudoclases de accion del usuario</a></td>
+        </tr>
+        <tr>
+            <td>E:focus</td>
+            <td>Un elemento E durante ciertas acciones del usuario.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#useraction-pseudos" target= "_blank">Pseudoclases de accion del usuario</a></td>
+        </tr>
+        <tr>
+            <td>E:target</td>
+            <td>Un elemento E es el destino del URI de referencia.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#target-pseudo" target= "_blank">Pseudoclase objetivo</a></td>
+        </tr>
+        <tr>
+            <td>E:lang(fr)</td>
+            <td>Un elemento de tipo E en el idioma "fr".</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#lang-pseudo" target= "_blank">La pseudoclase :lang()</a></td>
+        </tr>
+        <tr>
+            <td>E:enabled</td>
+            <td>Un elemento de interfaz de usuario E esta habilitado.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#UIstates" target= "_blank">El elemento de la interfaz de usuario establece pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:disabled</td>
+            <td>Un elemento de interfaz de usuario E esta deshabilitado.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#UIstates" target= "_blank">El elemento de la interfaz de usuario establece pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E:checked</td>
+            <td>Un elemento E de la interfaz de usuario que está marcado.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#UIstates" target= "_blank">El elemento de la interfaz de usuario establece pseudoclases</a></td>
+        </tr>
+        <tr>
+            <td>E::first-line</td>
+            <td>La primera línea formateada de un elemento E.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#first-line" target= "_blank">El pseudoelemento ::primera letra</a></td>
+        </tr>
+        <tr>
+            <td>E::first-letter</td>
+            <td>La primera letra formateada de un elemento E.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#first-line" target= "_blank">El ::pseudoelemento de primera letra</a></td>
+        </tr>
+        <tr>
+            <td>E::before</td>
+            <td>Contenido generado antes de un elemento E.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#gen-content" target= "_blank">El pseudo-elemento ::antes</a></td>
+        </tr>
+        <tr>
+            <td>E::after</td>
+            <td>Contenido generado después de un elemento E.</td>
+            <td><a href="https://www.w3.org/TR/selectors-3/#gen-content" target= "_blank">El pseudo-elemento ::despues</a></td>
+        </tr>
+
+    </tbody>
+</table>
+
+<hr>
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            Unidades
+        </div>
+    </div>
+
+</header>   
+<table>
+    <h3>Unidades de longitud absoluta</h3>
+    <thead>
+        <tr>
+            <th>Unidad</th>
+            <th>Nombre</th>
+            <th>Equivale a</th>
+            <th>Enlace</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>cm</td>
+            <td>Centímetros</td>
+            <td>1cm = 96px/2,54</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units/#unidades_de_longitud_absoluta" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>mm</td>
+            <td>Milímetros</td>
+            <td>1mm = 1/10 de 1cm</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units/#unidades_de_longitud_absoluta" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>Q</td>
+            <td>Cuartos de milímetros</td>
+            <td>1Q = 1/40 de 1cm</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units/#unidades_de_longitud_absoluta" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>in</td>
+            <td>Pulgadas</td>
+            <td>1in = 2,54cm = 96px</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units/#unidades_de_longitud_absoluta" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>pc</td>
+            <td>Picas</td>
+            <td>1pc = 1/6 de 1in</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units/#unidades_de_longitud_absoluta" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>pt</td>
+            <td>Puntos</td>
+            <td>1pt = 1/72 de 1in</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units/#unidades_de_longitud_absoluta" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>px</td>
+            <td>Píxeles</td>
+            <td>1px = 1/96 de 1in</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units/#unidades_de_longitud_absoluta" target= "_blank">Documentacion</a></td>
+        </tr>
+    </tbody>
+</table>
+<table>
+    <h3>Unidades de longitud relativa</h3>
+    <thead>
+        <tr>
+            <th>Unidad</th>
+            <th>Relativa a</th>
+            <th>Documentacion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>em</td>
+            <td>Tamaño de letra del elemento padre, en el caso de propiedades tipográficas como font-size, y tamaño de la fuente del propio elemento en el caso de otras propiedades, como width.</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units#unidades_de_longitud_relativa" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>ex</td>
+            <td>Altura x de la fuente del elemento.</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units#unidades_de_longitud_relativa" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>ch</td>
+            <td>La medida de avance (ancho) del glifo "0" de la letra del elemento.</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units#unidades_de_longitud_relativa" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>rem</td>
+            <td>Tamaño de la letra del elemento raíz.</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units#unidades_de_longitud_relativa" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>lh</td>
+            <td>Altura de la línea del elemento.</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units#unidades_de_longitud_relativa" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>vw</td>
+            <td>1% del ancho de la ventana gráfica.</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units#unidades_de_longitud_relativa" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>vh</td>
+            <td>1% de la altura de la ventana gráfica.</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units#unidades_de_longitud_relativa" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>vmin</td>
+            <td>1% de la dimensión más pequeña de la ventana gráfica.</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units#unidades_de_longitud_relativa" target= "_blank">Documentacion</a></td>
+        </tr>
+        <tr>
+            <td>vmax</td>
+            <td>1% de la dimensión más grande de la ventana gráfica.</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units#unidades_de_longitud_relativa" target= "_blank">Documentacion</a></td>
+        </tr>
+
+    </tbody>
+</table>
+<hr>
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            Propiedades
+        </div>
+    </div>
+
+</header>  
+<h3>Contenido</h3>
+<table>
+    <thead>
+        <th>Propiedad</th>
+        <th>Valor Inicial</th>
+        <th>Heredable</th>
+        <th>Valores</th>
+        <th>Descripcion</th>
+        <th>Link</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>width</td>
+            <td>auto</td>
+            <td>No</td>
+            <td>auto longitud %</td>
+            <td>establece el ancho de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" target="_blank">width</a></td>
+        </tr>
+        <tr>
+            <td>min-width</td>
+            <td>auto</td>
+            <td>No</td>
+            <td>el porcentaje como se especifica o la longitud absoluta</td>
+            <td>establece el ancho mínimo de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-width" target="_blank">min-width</a></td>
+        </tr>
+        <tr>
+            <td>max-width</td>  z
+            <td>none</td>
+            <td>No</td>
+            <td>el porcentaje como se especifica o la longitud absoluta.</td>
+            <td>establece el ancho máximo de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-width" target="_blank">max-width</a></td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>auto</td>
+            <td>No</td>
+            <td>el porcentaje se calcula con respecto a la altura del bloque contenedor de la caja generada.</td>
+            <td>especifica la altura de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height" target="_blank">height</a></td>
+        </tr>
+        <tr>
+            <td>min-height</td>
+            <td>auto</td>
+            <td>No</td>
+            <td>el porcentaje se calcula con respecto a la altura del bloque contenedor de la caja generada.</td>
+            <td>establece la altura mínima de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-height" target="_blank">min-height</a></td>
+        </tr>
+        <tr>
+            <td>max-height</td>
+            <td>none</td>
+            <td>No</td>
+            <td>el porcentaje como se especifica o la longitud absoluta</td>
+            <td>establece la altura máxima de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-height" target="_blank">max-height</a></td>
+        </tr>
+    </tbody>
+</table>
+<h3>Relleno</h3>
+
+<table>
+    <thead>
+        <th>Propiedad</th>
+        <th>Valor Inicial</th>
+        <th>Heredable</th>
+        <th>Valores</th>
+        <th>Descripcion</th>
+        <th>Link</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>padding-top</td>
+            <td>0</td>
+            <td>No</td>
+            <td>el porcentaje como se especifica o la longitud absoluta</td>
+            <td>establece la altura del área de relleno en la parte superior de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top" target="_blank">padding-top</a></td>
+        </tr>
+        <tr>
+            <td>padding-right</td>
+            <td>0</td>
+            <td>No</td>
+            <td>el porcentaje como se especifica o la longitud absoluta</td>
+            <td>establece el ancho del área de relleno a la derecha de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right" target="_blank">padding-right</a></td>
+        </tr>
+        <tr>
+            <td>padding-bottom</td>
+            <td>0</td>
+            <td>No</td>
+            <td>el porcentaje como se especifica o la longitud absoluta</td>
+            <td>establece la altura del área de relleno en la parte inferior de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom" target="_blank">padding-bottom</a></td>
+        </tr>
+        <tr>
+            <td>padding-left</td>
+            <td>0</td>
+            <td>No</td>
+            <td>el porcentaje como se especifica o la longitud absoluta</td>
+            <td>establece el ancho del área de relleno a la izquierda de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left" target="_blank">padding-left</a></td>
+        </tr>
+        <tr>
+            <td>padding</td>
+            <td>0 para cada padding.</td>
+            <td>No</td>
+            <td>el porcentaje como se especifica o la longitud absoluta para todos los padding.</td>
+            <td>establece el ancho del área de relleno a la izquierda de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" target="_blank">padding</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Borde</h3>
+<table>
+    <thead>
+        <th>Propiedad</th>
+        <th>Valor Inicial</th>
+        <th>Heredable</th>
+        <th>Valores</th>
+        <th>Descripcion</th>
+        <th>Link</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>border-width</td>
+            <td>medium para todos los border</td>
+            <td>No</td>
+            <td>la longitud absoluta o 0 para todos los border.</td>
+            <td>establece el ancho del borde de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width" target="_blank">border-width</a></td>
+        </tr>
+        <tr>
+            <td>border-style</td>
+            <td>none</td>
+            <td>No</td>
+            <td>la longitud absoluta o 0 para todos los border.</td>
+            <td>establece el estilo de línea para los cuatro lados del borde de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style" target="_blank">border-style</a></td>
+        </tr>
+        <tr>
+            <td>border-color</td>
+            <td>currentcolor</td>
+            <td>No</td>
+            <td>color calculado.</td>
+            <td>establece el color del borde de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-color" target="_blank">border-color</a></td>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td>medium,none,currentcolor</td>
+            <td>No</td>
+            <td>la longitud absoluta, como se especificó, color calculado.</td>
+            <td>la propiedad abreviada CSS establece el borde de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">border</a></td>
+        </tr>
+    </tbody>
+</table>
+<h3>Margen</h3>
+<table>
+    <thead>
+        <th>Propiedad</th>
+        <th>Valor Inicial</th>
+        <th>Heredable</th>
+        <th>Valores</th>
+        <th>Descripcion</th>
+        <th>Link</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>margin-top</td>
+            <td>0</td>
+            <td>No</td>
+            <td>el porcentaje como se especifica o la longitud absoluta.</td>
+            <td>establece el área de margen en la parte superior de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top" target="_blank">margin-top</a></td>
+        </tr>
+        <tr>
+            <td>margin-right</td>
+            <td>0</td>
+            <td>No</td>
+            <td>el porcentaje como se especifica.</td>
+            <td>establece el área de margen en el lado derecho de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right" target="_blank">margin-right</a></td>
+        </tr>
+        <tr>
+            <td>margin-bottom</td>
+            <td>0</td>
+            <td>No</td>
+            <td>el porcentaje como se especifica o la longitud absoluta</td>
+            <td>establece el área de margen en la parte inferior de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom" target="_blank">margin-bottom</a></td>
+        </tr>
+        <tr>
+            <td>margin-left</td>
+            <td>0</td>
+            <td>No</td>
+            <td>el porcentaje como se especifica o la longitud absoluta.</td>
+            <td>establece el área de margen en el lado izquierdo de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left" target="_blank">margin-left</a></td>
+        </tr>
+        <tr>
+            <td>margin</td>
+            <td>0 para todos los margin</td>
+            <td>No</td>
+            <td>el porcentaje como se especifica o la longitud absoluta para cada margin.</td>
+            <td>establece el área de margen en los cuatro lados de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" target="_blank">margin</a></td>
+        </tr>
+    </tbody>
+</table>
+<h3>Facilitar Calculos</h3>
+<table>
+    <thead>
+        <th>Propiedad</th>
+        <th>Valor Inicial</th>
+        <th>Heredable</th>
+        <th>Valores</th>
+        <th>Descripcion</th>
+        <th>Link</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>box-sizing</td>
+            <td>content-box</td>
+            <td>No</td>
+            <td>como se especificó.</td>
+            <td>establece cómo se calcula el ancho y alto total de un elemento.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">box-sizing</a></td>
+        </tr>
+        <tr>
+            <td>box-sizing</td>
+            <td>border-box</td>
+            <td>No</td>
+            <td>como se especificó.</td>
+            <td>el ancho y el alto incluyen el relleno y los bordes.</td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">box-sizing</a></td>
+        </tr>
+    </tbody>
+
+</table>
+</table>
+</html>
+

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://img.freepik.com/vector-gratis/tonos-azules-fondo-acuarela_91008-275.jpg?w=1380&t=st=1664198064~exp=1664198664~hmac=a7546bd31baa2e975b4d297003017a628a3c0500374f0e7aca2fac453ab5645b");
+    background-size: 100% 150%;
+    background-repeat: no-repeat;
+}
+img{
+    height: auto;
+    width: 150px;
+    float: right;
+    border: 0ch;
+   
+}
+h1{
+    text-align:center;
+    
+}
+table,tr,td{
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+ 
+}
+
+table,tr,td{
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+ 
+}
+table tr:hover{
+    background-color: white;
+  
+}
+table th{
+    background-color: rgb(39, 124, 163);
+}
+tr{
+    background-color: rgb(232, 241, 252);  
+   
+}
+/*
+tr:hover{
+   color: rgb(0, 0, 0);
+   background-color: rgba(255, 255, 255, 0);
+    
+}
+
+td:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+     
+}
+td{
+    background-color: rgb(232, 241, 252);
+
+}
+tr{
+    background-color: rgb(39, 124, 163);
+    
+   
+}*/
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
+    
+}
+.wrapper2{
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
+   
+    
+}
+header .logo2{
+    color: #fff;
+    font-size:  40px;
+    line-height: 90px;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    text-align: center;
+   
+  
+}
+header .logo{
+    color: #fff;
+    font-size:  40px;
+    line-height: 200px;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    text-align: center;
+  
+}
+header{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    background-color:#3A3B43;
+}
