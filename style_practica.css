@@ -1,13 +1,13 @@
 *{margin: 0;padding: 0;box-sizing: border-box; font-family: sans-serif;}
 
 body{
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-background-image: url("https://smdsolucoes.com.br/wp-content/uploads/2022/01/gartner-reveals-top-it-predictions-2021-beyond-980x540-1.jpeg");
-background-size: 100% 100%;
-background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://smdsolucoes.com.br/wp-content/uploads/2022/01/gartner-reveals-top-it-predictions-2021-beyond-980x540-1.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .capa{
     width: 100%;
@@ -19,7 +19,7 @@ background-repeat: no-repeat;
 .parrafo{
     z-index: 1;
     width: 840px;
-    height: 860px;
+    height: 910px;
     padding: 20px 20px;
     font-size: 15px;
     line-height: 1.5;
@@ -47,4 +47,32 @@ background-repeat: no-repeat;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.parrafo a{
+    text-decoration:none;
+    display: inline-block;
+    padding-bottom  : 100px;
+    padding: 10px;
+    margin-top: 20px;
+    color:rgb(255, 255, 255);
+    font-size:22px;
+    font-family: Arial Black; 
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background-color: #4894ff;
+    border: 1px solid #4894ff;
+    outline: none;
+    transition: 0.6s ease-in-out;
+    text-align: center;
+   
+}
+.parrafo a:hover{
+    background-color: #1e67a3;
+}
+
+h1{
+    font-family: Arial Black;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 30px; 
 }

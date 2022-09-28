@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <link rel="stylesheet" href="style_flexbox.css">
+    <link rel="icon" href="./img_flexbox/flex.PNG">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                MI MANUAL
+            </div>
+            <nav>
+                <a href="pag_html.html">INICIO</a>
+                <a href="pag_html.html">HTML</a>
+                <a href="pag_css.html">CSS</a>
+                <a href="pag_practica.html">PRACTICA</a>
+                <a href="pag_flexbox.html">FLEXBOX</a>
+            </nav>
+        </div>
+
+    </header>
+<h1>Flexbox</h1>
+<table>
+    <thead>
+        <th>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</th>
+        <th>IMAGEN REPRESENTATIVA</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td><pre>
+                .contenedor{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap; [VALOR POR DEFECTO]
+                }
+        </pre></td>
+            <td><img src="./img_flexbox/uno.png" alt=""></td>
+        </tr>
+    </tbody>
+    <thead>
+        <th>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</th>
+        <th>IMAGEN REPRESENTATIVA</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td><pre>
+                .contenedor{
+
+                    display: flex;
+                    flex-direction: row-reverse;
+                    flex-wrap: nowrap; [VALOR POR DEFECTO]
+                }
+            </pre></td>
+            <td><img src="./img_flexbox/dos.png" alt=""></td>
+           
+        </tr>
+    </tbody>
+    <thead>
+    
+        <th>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</th>
+        <th>IMAGEN REPRESENTATIVA</th>
+    </thead>
+    <tbody>
+         <tr>
+            <td><pre>
+                .contenedor{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap; [VALOR POR DEFECTO]
+                }
+        </pre></td>
+            <td><img src="./img_flexbox/tres.png" alt=""></td>
+         </tr>
+    </tbody>
+    <thead>
+    
+        <th>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</th>
+        <th>IMAGEN REPRESENTATIVA</th>
+    </thead>
+    <tbody>
+         <tr>
+            <td><pre>
+                .contenedor{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    flex-wrap: nowrap; [VALOR POR DEFECTO]
+                }
+        </pre></td>
+            <td><img src="./img_flexbox/cuatro.png" alt=""></td>
+         </tr>
+    </tbody>
+    <thead>
+    
+        <th>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</th>
+        <th>IMAGEN REPRESENTATIVA</th>
+    </thead>
+    <tbody>
+         <tr>
+            <td><pre>
+                .contenedor{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+        </pre></td>
+            <td><img src="./img_flexbox/cinco.png" alt=""></td>
+         </tr>
+    </tbody>
+    <thead>
+    
+        <th>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</th>
+        <th>IMAGEN REPRESENTATIVA</th>
+    </thead>
+    <tbody>
+         <tr>
+            <td><pre>
+                .contenedor{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    flex-wrap: wrap;
+                }
+        </pre></td>
+            <td><img src="./img_flexbox/seis.png" alt=""></td>
+         </tr>
+    </tbody>
+    <thead>
+    
+        <th>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</th>
+        <th>IMAGEN REPRESENTATIVA</th>
+    </thead>
+    <tbody>
+         <tr>
+            <td><pre>
+                .contenedor{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+        </pre></td>
+            <td><img src="./img_flexbox/siete.png" alt=""></td>
+         </tr>
+    </tbody>
+    <thead>
+    
+        <th>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</th>
+        <th>IMAGEN REPRESENTATIVA</th>
+    </thead>
+    <tbody>
+         <tr>
+            <td><pre>
+                .contenedor{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    flex-wrap: wrap;
+                }
+        </pre></td>
+            <td><img src="./img_flexbox/ocho.png" alt=""></td>
+         </tr>
+    </tbody>
+    <thead>
+    
+        <th>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</th>
+        <th>IMAGEN REPRESENTATIVA</th>
+    </thead>
+    <tbody>
+         <tr>
+            <td><pre>
+                .contenedor{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap-reverse;
+                }
+        </pre></td>
+            <td><img src="./img_flexbox/nueve.png" alt=""></td>
+         </tr>
+    </tbody>
+    <thead>
+    
+        <th>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</th>
+        <th>IMAGEN REPRESENTATIVA</th>
+    </thead>
+    <tbody>
+         <tr>
+            <td><pre>
+                .contenedor{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    flex-wrap: wrap-reverse;
+                }
+        </pre></td>
+            <td><img src="./img_flexbox/diez.png" alt=""></td>
+         </tr>
+    </tbody>
+    <thead>
+    
+        <th>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</th>
+        <th>IMAGEN REPRESENTATIVA</th>
+    </thead>
+    <tbody>
+         <tr>
+            <td><pre>
+                .contenedor{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap-reverse;
+                }                
+        </pre></td>
+            <td><img src="./img_flexbox/once.png" alt=""></td>
+         </tr>
+    </tbody>
+    <thead>
+    
+        <th>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</th>
+        <th>IMAGEN REPRESENTATIVA</th>
+    </thead>
+    <tbody>
+         <tr>
+            <td><pre>
+                .contenedor{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    flex-wrap: wrap-reverse;
+                }
+        </pre></td>
+            <td><img src="./img_flexbox/doce.png" alt=""></td>
+         </tr>
+    </tbody>
+</table>
+</body>
+</html>

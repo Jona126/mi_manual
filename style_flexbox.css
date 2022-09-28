@@ -52,31 +52,21 @@ header nav a {
 	transition:all 500ms ease;
     
 }
-img{
-    height: auto;
-    width: 150px;
-    float: right;
-    border: 0ch;
-   
-}
 table,tr,td{
     margin: auto;
     border: 1px solid black;
     padding: 10px;
     border-collapse: collapse;
-   
+ 
 }
-table tr:hover{
-    background-color: rgb(205, 231, 255);
-  
+td{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
 }
-table th{
+th{
     background-color: black;
     color: white;
-}
-tr{
-    background-color: #ffffff;  
-   
+    padding: 10px;
 }
 h1{
     text-align: center; 
@@ -106,78 +96,3 @@ h1::before{
 h1::after{
     right: -140px;
 }
-h3{
-    font-family: Arial Black;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    font-size: 30px; 
-    
-}
-h4{
- 
-    font-family: Arial Black;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 18px; 
-   
-}
-/*
-tr:hover{
-   color: rgb(0, 0, 0);
-   background-color: rgba(255, 255, 255, 0);
-    
-}
-
-td:hover{
-    color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
-     
-}
-td{
-    background-color: rgb(232, 241, 252);
-
-}
-tr{
-    background-color: rgb(39, 124, 163);
-    
-   
-}*/
-/* .wrapper{
-    width: 90%;
-    max-width: 1000px;
-    margin:auto;
-    overflow: hidden;
-    
-}
-.wrapper2{
-    width: 90%;
-    max-width: 1000px;
-    margin:auto;
-    overflow: hidden;
-   
-    
-}
-header .logo2{
-    color: #fff;
-    font-size:  40px;
-    line-height: 90px;
-    font-family: Copperplate, Copperplate Gothic Light, fantasy;
-    text-align: center;
-   
-  
-}
-header .logo{
-    color: #fff;
-    font-size:  40px;
-    line-height: 200px;
-    font-family: Copperplate, Copperplate Gothic Light, fantasy;
-    text-align: center;
-  
-}
-header{
-    width: 100%;
-    overflow: hidden;
-    margin-bottom: 20px;
-    margin-top: 25px;
-    background-color:#3A3B43;
-} */
